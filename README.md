@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# 🚀 Projet React avec Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue dans ce projet React configuré avec Vite ! Ce projet offre une base rapide et performante pour démarrer une application moderne avec React et TypeScript.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Prérequis
 
-## Expanding the ESLint configuration
+Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre machine :
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Node.js](https://nodejs.org/) (v16 ou supérieur recommandé)
+- [npm](https://www.npmjs.com/) (inclus avec Node.js) ou [yarn](https://yarnpkg.com/)
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Installation
+
+1. **Clonez ce dépôt** :
+
+   ```bash
+   git clone https://github.com/mohamedHamadaboy/chatbot.git
+
+   ```
+
+2. **Accédez au dossier du projet** :
+
+   ```bash
+   cd nom-du-repo
+
+   ```
+
+3. **Installez les dépendances :** :
+
+   ```bash
+   npm install
+
+   ```
+
+4. **Créer le fichier .env :** :
+
+À la racine de votre projet, créez un fichier nommé .env
+
+5. **Ajouter les variables d'environnement :** :
+
+Ajoutez les variables nécessaires dans le fichier .env.
+
+```bash
+  VITE_OPENAI_API_KEY="clé-open-ai"
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+5. **Démarrez le serveur de développement :** :
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Ajoutez les variables nécessaires dans le fichier .env.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+  npm run dev
+
 ```
