@@ -8,7 +8,7 @@ Bienvenue dans ce projet React configuré avec Vite ! Ce projet offre une base r
 
 Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre machine :
 
-- [Node.js](https://nodejs.org/) (v16 ou supérieur recommandé)
+- [Node.js](https://nodejs.org/) (v20 ou supérieur recommandé)
 - [npm](https://www.npmjs.com/) (inclus avec Node.js) ou [yarn](https://yarnpkg.com/)
 
 ---
